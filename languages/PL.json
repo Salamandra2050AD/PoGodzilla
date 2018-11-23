@@ -1,0 +1,23 @@
+{
+   "relativeHumidity":"Wilgotność: ",
+   "feelsLike":"Temperatura Odczuwalna: ",
+   "wind": "Wiatr ",
+   "dewpoint" : "Punkt Skraplania Rosy: ",
+   "changeLocation" : "Wybierz Miejscowość",
+   "changeScale" : "Wybierz Skalę",
+   "city" : "Miasto",
+   "state" : "Państwo/Stan",
+   "save" : "Zapisz",
+   "close" : "Anuluj",
+   "chooseScale" : "Wybierz Skalę Termometryczną",
+   "chooseLocation" : "Wybierz Miejscowość",
+   "celsius" : "Skala Celsjusza",
+   "fahrenheit" : "Skala Fahrenheita",
+   "bothScales" : "Obie Skale",
+   "changeLang" : "Wybierz Język",
+   "chooseLang" : "Wybierz Język",
+   "PL" : "Polski (PL)",
+   "EN" : "Angielski (EN)",
+   "windSpeed" : " o prędkości ",
+   "errorMessage" : "Ups! Nie udało się odnaleźć wprowadzonej lokalizacji... Spróbuj ponownie"
+}

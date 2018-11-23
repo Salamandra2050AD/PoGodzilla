@@ -1,0 +1,23 @@
+{
+   "relativeHumidity":"Relative Humidity: ",
+   "feelsLike":"Feels Like: ",
+   "wind": "Wind from ",
+   "dewpoint" : "Dewpoint: ",
+   "changeLocation" : "Change Location",
+   "changeScale" : "Change Scale",
+   "city" : "City",
+   "state" : "Country/State",
+   "save" : "Save",
+   "close" : "Close",
+   "chooseScale" : "Choose Scale",
+   "chooseLocation" : "Choose Location",
+   "celsius" : "Celsius",
+   "fahrenheit" : "Fahrenheit",
+   "bothScales" : "Display Both Scales",
+   "changeLang" : "Change Language",
+   "chooseLang" : "Choose Language",
+   "PL" : "Polish (PL)",
+   "EN" : "English (EN)",
+   "windSpeed" : " at ",
+   "errorMessage" : "Could not find this location..."
+}
