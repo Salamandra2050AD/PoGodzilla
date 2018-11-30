@@ -4,41 +4,32 @@ class Storage {
       this.state;
       this.scale;
       this.lang;
-      this.currentCity;
-      this.defaultCity = 'Warszawa';
-      this.defaultState = 'PL';
+      this.lat;
+      this.lon;
       this.defaultLang = 'PL';
    }
 
    getDefaultScale() {
       const fahrenheitScaleCounties = ['BS', 'BZ', 'US', 'PW', 'KY', 'AK', 'AL', 'AR', 'AZ', 'CA', 'CO', 'CT', 'DC', 'DE', 'FL', 'GA', 'HI', 'IA', 'ID', 'IL', 'IN', 'KS', 'KY', 'LA', 'MA', 'MD', 'ME', 'MI', 'MN', 'MO', 'MS', 'MT', 'NC', 'ND', 'NE', 'NH', 'NJ', 'NM', 'NV', 'NY', 'OH', 'OK', 'OR', 'PA', 'PR', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VA', 'VT', 'WA', 'WI', 'WV', 'WY', 'UM']
-      if (fahrenheitScaleCounties.some(v => this.state === v)) {
-        return 'F';
+      if (fahrenheitScaleCounties.some(v => v === this.state)) {
+         return 'F';
       } else {
-        return 'C';
+         return 'C';
       }
-    }
+   }
+
 
    getData() {
-      if(localStorage.getItem('city') === null) {
-         this.city = this.defaultCity;
-      } else {
-         this.city = localStorage.getItem('city');
-      }
-
-      if(localStorage.getItem('state') === null) {
-         this.state = this.defaultState;
-      } else {
-         this.state = localStorage.getItem('state');
-      }
-
-      if(localStorage.getItem('lang') === null) {
+      this.city = localStorage.getItem('city');
+      this.state = localStorage.getItem('state');
+      
+      if (localStorage.getItem('lang') === null) {
          this.lang = this.defaultLang;
       } else {
          this.lang = localStorage.getItem('lang');
       }
 
-      if(localStorage.getItem('scale') === null) {
+      if (localStorage.getItem('scale') === null) {
          this.scale = this.getDefaultScale();
       } else {
          this.scale = localStorage.getItem('scale');
@@ -48,11 +39,13 @@ class Storage {
          city: this.city,
          state: this.state,
          scale: this.scale,
-         lang: this.lang
+         lang: this.lang,
+         lat: this.lat,
+         lon: this.lon
       }
    }
 
-   
+
 
    setLocationData(city, state) {
       localStorage.setItem('city', city);

@@ -1,6 +1,6 @@
 const storage = new Storage();
 const storeData = storage.getData();
-const weather = new Weather(storeData.city, storeData.state, storeData.lang);
+const weather = new Weather(storeData.city, storeData.state, storeData.lang, storeData.lon, storeData.lat);
 const ui = new UI(storeData.scale, storeData.lang);
 let data;
 
